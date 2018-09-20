@@ -1,0 +1,102 @@
+html {
+    height:100%;
+}
+
+body {
+    height:100%;
+    overflow-y:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+  width: 35%;
+  height: 70%;
+}
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  /* Only take up 20% of the entire calculator height */
+  height: 20%;
+  color: white;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.display > p {
+  margin-right: 10%;
+  font-size: 3em;
+}
+
+.button-container {
+  /* Take up the remaining calculator height */
+  height: 80%;
+}
+
+.operation-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  border-bottom: 0.5px solid black;
+}
+
+.operation-buttons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  background-color: grey;
+}
+
+.operation-buttons > div:not(:last-of-type) {
+  border-right: 0.5px solid black;
+}
+
+.lower-container {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  width: 100%;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+  background-color: cyan;
+  border-bottom-left-radius: 15px;
+}
+
+.numbers > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+
+.numbers > div:not(:nth-of-type(3n)) {
+  border-right: 0.5px solid black;
+}
+
+.numbers > div:nth-child(-n + 9) {
+  border-bottom: 0.5px solid black;
+}
+
+.equal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  background-color: orange;
+  border-bottom-right-radius: 15px;
+  border-left: 0.5px solid black;
+}
