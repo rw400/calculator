@@ -73,6 +73,24 @@ function awesomeFunction(){
 	
 }
 
+var x = 1
+var y 2
+ if (x> y) {
+	 console.log(true)
+ }
+ if (x<y) {
+	 console.log(false)
+ }
+ if (x==y) {
+	 concole.log(correct")
+} else if (x<y) {
+	console.log(true)
+} else if (x>y) {
+	console.log(false)
+}else {
+	console.log("whatever")
+}
+
 
 
 /* 

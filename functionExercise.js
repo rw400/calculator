@@ -1,33 +1,42 @@
-function addition(){
-	var a = 13
-	var b = 44
+function addition(a, b){
 	var c = a + b
-	Console.log("13 + 44 = " , c) 
+	Console.log(c) 
 }
 
-function subtraction(){
-	const d = 56
-	const e = 8
-	const f = d - e
-	Console.log("56 - 8 = " , f)
+function subtraction(a, b){
+	var c = a - b
+	Console.log(c)
 }
 
-function multiply(){
-	let value1 = 3
-	let value2 = 5
-	let multiplyValues = value1 * value2
-	Console.log( "3 * 5 = ", multiplyValues)
+function multiply(a, b){
+	var a*b
+	Console.log(c)
 	
 }
 
-function divide(){
-	var g = 8
-	var h = 3
-	float i = g / h
-	Console.log( "8/3 = ", i)
+function divide(a, b){
+	float a/b
+	Console.log(c)
 }
 
-addition()
-subtraction()
-multiply()
-divide()
+addition(22, 4)
+subtraction(35, 6)
+multiply(4, 6)
+divide(10, 3)
+
+console.log(addition(13,34))
+
+var sum = addition(2, 3)
+var sub = subtraction(7, 4)
+var times = multiply(2, 3)
+var div = divide(4,2)
+
+if (sum > sub){
+	console.log(true)
+} else if (sum < sub){
+	consolse.log(false)
+}else {
+	conolse.log("else error")
+}
+
+
